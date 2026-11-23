@@ -1,14 +1,17 @@
-# English Mastery｜實際執行狀態
+# English Mastery｜截至 2026-11-23 的專案狀態
 
-- [x] N0 本人 10 題需求訪談與最終摘要確認；AGENTS.md 已建立。
-- [~] N1 官方來源和原始研究在線查閱，原文尚未全部封存到本機 raw/，S6 摘要限定。
-- [x] N2 分組 Wiki 建立：8 份來源卡（S1–S8）、19 條來源 Claim、2 條 AI 建議；check_cards PASS。
-- [x] N3 12 頁大綱與來源對照（Round 2 更新）；check_outline PASS。
-- [x] N4 12 頁 HTML 草稿與 mapping（Round 2 更新）；check_deck 經真實局部修正後 PASS。
-- [ ] N5 **獨立新對話**語意審查未執行；已根據使用者提供的外部審查意見完成 Round 2 局部修正。
-- [~] N6 Round 2：12 頁未檢出溢出、1366×768／1440×900／390×844 導覽重疊檢查與測驗通過；仍為受限載入模式，未完成公開站點驗證。
-- [ ] N7 公開部署尚未完成；本環境已有運行紀錄與反思依據。
+| 階段 | 狀態 | 證據與限制 |
+|---|---|---|
+| N0 需求訪談 | 完成 | 本人 10 題回答與確認；公開去識別化摘要 `interview-summary-public.md` |
+| N1 來源查核 | 基本查核完成，全文封存未齊 | 8 份來源書目／頁面及核心 Claim 核對；S6 摘要限定；`raw/` 尚未完整封存 |
+| N2 Wiki Ingest | 完成 | S1–S8 共 8 份來源卡、19 條來源 Claim＋2 條 AI 建議；格式檢查 PASS |
+| N3 大綱 | 完成 | 12 頁；`check_outline.py` PASS |
+| N4 逐頁稿 | 完成 | `check_deck.py` 初輪 FAIL、局部修正後 PASS；Round 2 PASS |
+| N5 語意審查 | 部分完成 | 已使用外部審查意見修正；新對話完全獨立 AI 審查尚未完成 |
+| N6 HTML 渲染／互動 | 完成並附限制 | 外部審查者回報完整 Chromium 12 頁無溢出；本站測試過程與沙盒限制詳見 Round 2 報告 |
+| N7 公開發布 | **完成** | 網站 https://114-nccu.github.io/english-mastery/；原始碼 https://github.com/114-nccu/english-mastery |
+| 最終作業提交 | 待本人完成 | 仍須本人確認反思、標題資料與學校系統送出 |
 
-說明：任何本機和正式 GitHub 事件均不得假稱已由使用者執行。
+請以 `runs/round1/report.md`、`runs/round2/report.md` 和 `runs/round2/content-audit-2026-11-23.md` 區分不同日期／環境的驗證，不能把轉述的測試當成助手在本機親自執行的結果。
 
-- [x] Round 2 修正：S8 定義補充、P6 證據界線、P7 虛假量化條狀圖移除、手機／桌機導覽修正。見 runs/round2/report.md。
+**Prompt 修訂狀態（2026-11-23）**：已在 N3 大綱規則新增術語定義 Claim 檢查、N5 審查新增視覺量化誤導檢查，見 `prompts/03-outline.md`、`prompts/05-independent-review.md`；此為事後流程改善，**尚未使用新 Prompt 重跑完整 N3→N5**。

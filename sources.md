@@ -1,35 +1,21 @@
-# 來源與查核清單｜N1 書目核對及 Round 2 補充來源
+# English Mastery｜來源與使用狀態（2026-11-23 更新）
 
-> 本檔只記錄本輪實際核對到的書目／官方頁面，以及需要繼續處理的原文核對工作。**目前 Wiki 已建立 S1–S8 八份來源卡，通過格式檢查，但原文完整本機保存仍待確認。** 本檔為正式來源表；歷史工具包資料僅供核對。
+> 下列 8 份資料均已建立 `wiki/sources/Sx.md` 證據卡。當中 19 條為有來源的 Claim，另有 2 條 AI 教學建議（不算研究證據）。`check_cards.py` 檢查 PASS。**已 ingest 不代表每份原始 PDF 已保存於 `raw/`。**
 
-| ID | 資料與書目 | DOI／官方網址 | 已確認 | 待處理 | N1 狀態 |
-|---|---|---|---|---|---|
-| S1 | ETS, *About the TOEIC Listening and Reading Test*（官方網頁，無 DOI） | https://www.ets.org/toeic/about/listening-reading.html | 官方網站；200 題，聽力 100 題 45 分鐘、閱讀 100 題 75 分鐘，Part 1–7 | 儲存合規的官方資料快照；記錄引用位置與抓取日期 | 書目／關鍵官網事實已核 |
-| S2 | Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013). *Improving Students’ Learning With Effective Learning Techniques: Promising Directions From Cognitive and Educational Psychology*. *Psychological Science in the Public Interest*, 14(1), 4–58 | https://doi.org/10.1177/1529100612453266 | 出版網站／PubMed 書目與 DOI | 取得原文並核對具體段落與研究限定；不可直接推出 TOEIC 提分 | 書目已核；未 ingest |
-| S3 | Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006). *Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis*. *Psychological Bulletin*, 132(3), 354–380 | https://doi.org/10.1037/0033-2909.132.3.354 | PubMed 作者／期刊／年卷／頁／DOI；公開原文 PDF 有入口 | 核對正文引用位置與完整數據；注意為一般記憶研究 | 書目已核；未 ingest |
-| S4 | Maie, R., Oikawa, G., Chen, Y., & Uchihara, T. (2025). *Cumulative Testing for L2 Vocabulary Learning: The Impact of Retrieval Practice and Proficiency*. *TESOL Quarterly*, **59(4)**, 1979–2008 | https://doi.org/10.1002/tesq.3391 | Wiley/ERIC 確認正式刊載 59(4):1979–2008、作者、DOI；研究者公開 CC BY 全文 PDF 可線上查閱（但尚未儲存至 raw/） | 本機保存研究者公開全文；claim 位置統一採 §章節名稱；front matter 註明 `page_basis: researchmap 早期版 PDF`；研究設計與限制仍待 N2 對照 | **N1 書目及全文入口已核**；尚未下載至 raw、未 ingest |
-| S5 | Sangers, N. L., van der Sande, L., Welie, C., Dobber, M., & van Steensel, R. (2025). *Learning a Language Through Reading: A Meta-analysis of Studies on the Effects of Extensive Reading on Second and Foreign Language Learning*. *Educational Psychology Review*, 37, article 96 | https://doi.org/10.1007/s10648-025-10068-6 | Springer 官網開放全文、作者、出版日、DOI | 核對研究設計、追蹤效果和限制；避免過度延伸至 TOEIC | 書目已核；未 ingest |
-| S6 | Karlin, O., & Karlin, S. (2023). *Developing L2 Listening Comprehension Through Extensive and Intensive Listening*. *AILA Review*, 36(1), 91–111 | https://doi.org/10.1075/aila.22015.kar | 出版社官方書目與摘要；269 位日本大學生之研究資訊 | **正式 PDF 需授權**：僅短時間查詢學校圖書館，無合法全文則標記 `full_text: false` 並只用摘要；不引用無法核對的正文頁碼 | ⚠️ 書目＋摘要已核；全文非阻擋條件 |
-| S7 | ETS, *TOEIC Test Preparation Materials*（官方網頁，無 DOI） | https://www.ets.org/toeic/test-takers/prepare.html | 官方網頁提供考生手冊、樣題與備考資源資訊 | 保存官方頁面快照；僅支持「提供哪些資源」等 FACT，**不能**當作資源效果的因果證據 | **N1 官方頁面已查得**；未保存快照、未 ingest |
+| ID | 正式來源 | 入口 | 在 Wiki 的用途 | 使用界線 |
+|---|---|---|---|---|
+| S1 | ETS, *About the TOEIC Listening and Reading Test* | https://www.ets.org/toeic/about/listening-reading.html | 官方測驗定位、7 個 Part、100+100 題及 45+75 分鐘 | 只作官方測驗事實，網站版本應註明查閱日 |
+| S2 | Dunlosky et al. (2013), *Psychological Science in the Public Interest*, 14(1), 4–58. DOI 10.1177/1529100612453266 | https://doi.org/10.1177/1529100612453266 | 練習測驗、間隔練習、重讀／畫重點的相對效用 | 一般學習科學，非 TOEIC 直接效果 |
+| S3 | Cepeda et al. (2006), *Psychological Bulletin*, 132(3), 354–380. DOI 10.1037/0033-2909.132.3.354 | https://doi.org/10.1037/0033-2909.132.3.354 | ISI 與保留間隔的關係 | 一般言語記憶研究；沒有所有人通用的最佳天數 |
+| S4 | Maie et al. (2025), *TESOL Quarterly*, 59(4), 1979–2008. DOI 10.1002/tesq.3391 | https://doi.org/10.1002/tesq.3391 | 累積測驗、兩個既有班級各 44 人、100 字學習 | 使用 Wiley HTML 的 §章節名稱定位，不混用早期 PDF 頁碼；非 TOEIC 提分證據 |
+| S5 | Sangers et al. (2025), *Educational Psychology Review*, 37, article 96. DOI 10.1007/s10648-025-10068-6 | https://doi.org/10.1007/s10648-025-10068-6 | 大量閱讀的短期小至中等正向效果 | 缺乏足夠長期追蹤；非 TOEIC 直接分數證據 |
+| S6 | Karlin & Karlin (2023), *AILA Review*, 36(1), 91–111. DOI 10.1075/aila.22015.kar | https://doi.org/10.1075/aila.22015.kar | 精聽／泛聽研究結果與測量指標比較 | `full_text: false`，**僅引用出版商公開摘要** |
+| S7 | ETS, *TOEIC Test Preparation Materials* | https://www.ets.org/toeic/test-takers/prepare.html | 官方考生手冊、樣題及準備課程等資源存在 | 資源存在不等於研究證明教材必然有效 |
+| S8 | The Open University (OpenLearn), *How to Learn a Language*, Week 5 §4 | https://www.open.edu/openlearn/mod/oucontent/view.php?id=68253&section=5 | 泛聽（聽大意）與精聽（聽具體資訊）的定義 | 教學定義，不是比較效果的因果研究 |
 
-| S8 | The Open University, OpenLearn. *How to Learn a Language*, Week 5, Section 4, *Listening: the Big Picture*（網頁未標發表年） | https://www.open.edu/openlearn/mod/oucontent/view.php?id=68253&section=5 | 查閱課程全文 §4，包含 Activity 6 對 extensive／intensive listening 的定義及 Discussion 的活動例子 | 僅作概念定義，不作效果或多益提分證據；若需本機封存，取得符合授權的個人閱讀副本或記錄網頁參照即可 | **N1 線上來源查閱完成；2026-11-23 新增，尚未封存 raw** |
+## 來源版本與權限
 
-## 來源與版本控制規則
-
-- **S4 頁碼基準**：正式期刊書目保留 `59(4), 1979–2008`；研究者公開 early-view PDF 的內文頁碼不得混用。S4 證據卡應填 `page_basis: researchmap 早期版 PDF`，Claim 位置統一用 `§章節`（例如 `§Results`），並核對該節確有此敘述。
-- **S6 全文授權**：先透過學校圖書館查詢；無授權全文時，不保存來路不明的 PDF、不填正文頁碼；如果要使用摘要，在卡片標示 `full_text: false` 和位置 `摘要`。摘要不支持的統計細節不可補。
-- **S7 角色**：屬於官方備考資源目錄，不能推論使用某教材必然改善英文或 TOEIC 成績。
-- **TOEIC 測驗時間**：ETS 正式作答為聽力 45 分鐘＋閱讀 75 分鐘＝2 小時；另有約 30 分鐘基本資料問卷，FAQ 建議到場預留 2.5–3 小時。引用時依保存快照記錄 `retrieved` 日期及具體口徑，不能把行政時間說成作答時間。
-- **公開 GitHub**：`raw/` 依 `.gitignore` 保持不追蹤。只提交 `n1-raw-manifest.md`、來源清單與查核紀錄，不上傳原文全文。
-
-## 查核入口（瀏覽器開啟）
-
-- S4 ERIC：https://eric.ed.gov/?id=EJ1489070
-- S4 Wiley 卷期：https://onlinelibrary.wiley.com/toc/15457249/2025/59/4
-- S4 作者公開 PDF：https://researchmap.jp/takumiuchihara/published_papers/49795126/attachment_file.pdf
-- S6 出版社：https://benjamins.com/catalog/aila.22015.kar
-- S7 ETS 備考資料：https://www.ets.org/toeic/test-takers/prepare.html
-- ETS 測驗：https://www.ets.org/toeic/about/listening-reading.html
-- ETS FAQ：https://www.ets.org/toeic/about/faq/test-taker-related-faq.html
-
-**重要：**本次新增查核僅完成網頁／書目身分核對，仍未建立 Wiki 或執行真實資料檢查。N1 原始檔案已否實際取得，應以本機 `n1-raw-manifest.md` 及檔案存在為準。
+- 各項 Claim 詳見 `wiki/sources/S1.md`–`S8.md`，可用 `runs/round2/mapping.md` 追溯簡報頁面。
+- S4 正式卷期頁碼可作書目；Claim 位置依最終 Wiki 卡片使用 `§Methods`、`§Results` 等章節。其 `page_basis` 為 Wiley 正式 HTML 的章節定位，避免與早期 PDF 的頁碼混用。
+- S6 全文未獲授權取得，不填正文頁碼、不從摘要推測未公開的結果。
+- 有些原始檔尚未保存至本機 `raw/`，公開 Repo 不附論文全文。這不影響已建立之 Wiki 卡片存在，但限制了來源可重現的程度。
