@@ -1,0 +1,3 @@
+LIMITATION: browser navigation blocked; testing inline HTML via set_content only
+# check_render：12 頁；截圖存於 /mnt/data/english-mastery-deliverable/runs/round1/screenshots
+PASS

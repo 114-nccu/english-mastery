@@ -1,0 +1,77 @@
+[
+  {
+    "viewport": "1366x768",
+    "slide": [
+      122.15789794921875,
+      30.526336669921875,
+      1243.8419799804688,
+      661.4736022949219
+    ],
+    "foot": [
+      181.74737548828125,
+      609.7711181640625,
+      1184.252685546875,
+      636.9368896484375
+    ],
+    "controls": [
+      1178.96875,
+      704,
+      1346,
+      752
+    ],
+    "docOverflow": 0,
+    "controls_foot_overlap": false,
+    "controls_slide_overlap": false,
+    "quiz": "PASS"
+  },
+  {
+    "viewport": "1440x900",
+    "slide": [
+      48,
+      34.000030517578125,
+      1392,
+      790.0000305175781
+    ],
+    "foot": [
+      119.39999389648438,
+      728.050048828125,
+      1320.5999450683594,
+      760.5999755859375
+    ],
+    "controls": [
+      1252.96875,
+      836,
+      1420,
+      884
+    ],
+    "docOverflow": 0,
+    "controls_foot_overlap": false,
+    "controls_slide_overlap": false,
+    "quiz": "PASS"
+  },
+  {
+    "viewport": "390x844",
+    "slide": [
+      0,
+      0,
+      390,
+      929.96875
+    ],
+    "foot": [
+      20,
+      809.96875,
+      370,
+      855.96875
+    ],
+    "controls": [
+      0,
+      929.96875,
+      390,
+      993.96875
+    ],
+    "docOverflow": 0,
+    "controls_foot_overlap": false,
+    "controls_slide_overlap": false,
+    "quiz": "PASS"
+  }
+]

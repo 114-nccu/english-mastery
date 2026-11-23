@@ -1,0 +1,9 @@
+# 2026-11-23: first cross-viewport test actually executed, FAILED
+# Source: stdout of tests/viewport_review_round2.py before mobile-navigation correction.
+1366x768 controls_foot_overlap=false, docOverflow=0
+1440x900 controls_foot_overlap=false, docOverflow=0
+390x844 controls_foot_overlap=true, controls_slide_overlap=true, docOverflow=0
+Mobile active-slide footer rect: [20, 809.96875, 370, 855.96875]
+Mobile fixed controls rect: [212.96875, 786, 380, 834]
+AssertionError: controls overlapping footer
+Correction: mobile controls changed from fixed/sticky to relative normal flow.
