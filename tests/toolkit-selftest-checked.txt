@@ -1,0 +1,26 @@
+OK    good check_cards：exit 0（預期 0）
+OK    good check_outline：exit 0（預期 0）
+OK    good check_deck：exit 0（預期 0）
+OK    good check_render：exit 0（預期 0）
+OK    bad  check_cards：exit 1（預期 1）
+         FAIL（3 項）
+         - S1-C01: 缺原文位置（p.頁碼、§章節、節 名稱，或「摘要」）
+         - S6-C01: FINDING 沒寫「限制：」
+         - S6: full_text=false 卻出現正文頁碼，請改標「摘要」
+OK    bad  check_outline：exit 1（預期 1）
+         FAIL（2 項）
+         - [P3 聽力] claim S6-C09 不存在於 Wiki
+         - [P4 空頁] 沒有任何 claim → 依規則停止，先補 Wiki
+OK    bad  check_deck：exit 1（預期 1）
+         FAIL（5 項）
+         - 第 2 頁「考試結構」 數字「60」在引用的 claim 裡找不到
+         - 第 3 頁「聽力」 沒有 data-claims
+         - 第 4 頁「規劃」 出現禁用詞「保證」
+         - 第 4 頁「規劃」 出現禁用詞「拿到高分」
+         - 第 4 頁「規劃」 引用 AI 建議（AI-xx），頁面上卻沒有標示「AI 建議」或「教學示例」
+OK    bad  check_render：exit 1（預期 1）
+         # check_render：5 頁；截圖存於 /mnt/data/english-mastery-v2-reviewed/selftest/bad/screenshots
+         FAIL（1 項）
+         - 第 5 頁「溢出」溢出 1673px
+
+全部符合預期

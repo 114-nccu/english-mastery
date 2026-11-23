@@ -1,0 +1,4 @@
+9b93ee5 2026-11-22 15:29:20 +0000 n4-n7: build deck, validate, log real fixes and handoff
+922beea 2026-11-22 15:29:20 +0000 n3: map wiki claims to twelve-slide teaching outline
+489b97a 2026-11-22 15:29:20 +0000 n2: ingest seven sourced evidence cards and concepts
+75871bc 2026-11-22 15:29:20 +0000 n0-n1: approved requirements and documented source checks
